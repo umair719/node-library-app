@@ -4,14 +4,26 @@
   "description": "",
   "main": "app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "DEBUG=app node app.js",
+    "lint" : "./node_modules/.bin/eslint app.js"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "bootstrap": "4.3.1",
     "chalk": "2.4.2",
     "debug": "4.1.1",
+    "eslint-config-airbnb": "17.1.0",
+    "eslint-plugin-import": "2.17.2",
+    "eslint-plugin-jsx-a11y": "6.2.1",
+    "eslint-plugin-react": "7.13.0",
     "express": "^4.16.4",
-    "morgan": "1.9.1"
+    "jquery": "3.4.1",
+    "morgan": "1.9.1",
+    "popper.js": "1.15.0"
+  },
+  "devDependencies": {
+    "eslint": "5.16.0"
   }
 }
